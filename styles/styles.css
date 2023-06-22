@@ -3,6 +3,7 @@
 @import "projects.css";
 @import "services.css";
 @import "review.css";
+@import "gallery.css";
 
 html {
     scroll-behavior: smooth;

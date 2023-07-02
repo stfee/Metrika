@@ -14,8 +14,74 @@
 </head>
 
 <body>
-    <main>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo-link">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./resources/metrika_logo_mob.png" />
+                        <img class="header__logo" src="./resources/metrika_logo.png" alt="logo" />
+                    </picture>
+                </a>
+                <nav>
+                    <ul class="header__nav">
+                        <li>
+                            <a class="header__nav__link" href="#about-us">О НАС</a>
+                        </li>
+                        <li>
+                            <a class="header__nav__link" href="#projects">ПРОЕКТЫ</a>
+                        </li>
+                        <li>
+                            <a class="header__nav__link" href="#services">УСЛУГИ</a>
+                        </li>
+                        <li>
+                            <a class="header__nav__link" href="#review">ОТЗЫВЫ</a>
+                        </li>
+                        <li>
+                            <a class="header__nav__link" href="#contacts">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="js-burger-btn burger-btn"></div>
+                <div class="js-burger burger">
+                    <div class="burger__content">
+                        <div class="burger-logo">
+                            <a class="header__logo-link">
+                                <img class="header__logo" src="./resources/metrika_logo.png">
+                            </a>
+                        </div>
+                        <nav class="burger-nav">
+                            <ul class="burger-nav-list">
+                                <li>
+                                    <a class="burger__nav-item" href="#about-us">О НАС</a>
+                                </li>
+                                <li>
+                                    <a class="burger__nav-item" href="#projects">ПРОЕКТЫ</a>
+                                </li>
+                                <li>
+                                    <a class="burger__nav-item" href="#services">УСЛУГИ</a>
+                                </li>
+                                <li>
+                                    <a class="burger__nav-item" href="#review">ОТЗЫВЫ</a>
+                                </li>
+                                <li>
+                                    <a class="burger__nav-item" href="#contacts">КОНТАКТЫ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <h3 class="burger__contacts__title">для связи:</h3>
+                        <div class="burger__contacts-wrapper js-burger__content">
+                            <a class="burger__contacts__phone" href="tel:+7 935  895-45-35">+7 935 895-45-35</a>
+                            <a class="burger__contacts__telegram" href="https://t.me/stfee58"
+                                target="_ blank">@stfee58</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <main>
         <section class="intro">
             <div class="container">
                 <h1 class="intro__title">Современные и стильные интерьеры для комфортной жизни</h1>
@@ -114,7 +180,23 @@
                             <p class="service__item__sticker service__item__sticker-big">5% от стоимости</p>
                         </li>
                     </ul>
-                    <button class="btn">Заказать услугу</button>
+                    <button class="js-btn btn">Заказать услугу</button>
+
+                    <div class="js-popup popup">
+                        <div class="js-popup__content popup__content">
+                            <p class="popup__title">Заказать услугу</p>
+                            <p class="popup__feedback">Заполните форму, мы свяжемся с вами в течение суток</p>
+
+                            <input class="input" type="user-name" placeholder="Имя">
+
+                            <input class="input" type="email" placeholder="Электронная почта">
+
+                            <input class="input" type="phone" placeholder="Номер телефона">
+
+                            <button class="popup-btn-inner btn-wrapper">Отправить</button>
+                            <div class="js-popup__close-btn popup__close-btn"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -258,8 +340,11 @@
             </div>
         </div>
     </footer>
-    </main>
+
     <script src="./js/gallery.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/burger.js"></script>
+
 </body>
 
 </html>

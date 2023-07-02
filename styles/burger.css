@@ -1,0 +1,136 @@
+.body_fixed {
+    overflow: hidden;
+}
+
+.burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: end;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.burger_open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+
+.burger__content {
+    width: 274px;
+    height: 100%;
+    background-color: #fff;
+    padding-left: 30px;
+    overflow-y: auto;
+}
+
+.burger-btn {
+    display: none;
+    z-index: 100;
+}
+
+.burger-nav-list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.burger__nav-item {
+    text-decoration: none;
+    color: black;
+}
+
+.burger__nav-item:hover {
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.burger-logo {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.burger__contacts__title {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.5;
+    margin-top: 90px;
+}
+
+.burger__contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.burger__contacts__phone {
+    text-decoration: none;
+    color: #121212;
+    font-size: 20px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.burger__contacts__phone:hover {
+    opacity: 0.5;
+}
+
+.burger__contacts__telegram {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 45px;
+    color: #121212;
+}
+
+.burger__contacts__telegram:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+    .burger-btn {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 25px;
+        background-image: url(../resources/burger-button.svg);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        bottom: 5px;
+    }
+
+    .burger-btn_open {
+        background-image: url(../resources/close-burger.png);
+        width: 21px;
+        height: 21px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 767px) {
+    .burger-btn {
+        width: 40px;
+        height: 8px;
+    }
+
+    .burger-btn_open {
+        width: 21px;
+        height: 21px;
+    }
+}
+
+@media (max-width: 370px) {
+    .burger__contacts__phone {
+        font-size: 18px;
+    }
+
+    .burger__contacts__telegram {
+        font-size: 18px;
+    }
+}

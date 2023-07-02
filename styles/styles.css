@@ -6,6 +6,9 @@
 @import "gallery.css";
 @import "contacts.css";
 @import "footer.css";
+@import "popup.css";
+@import "header.css";
+@import "burger.css";
 
 html {
     scroll-behavior: smooth;
@@ -17,8 +20,6 @@ body {
 
 main {
     display: block;
-    margin-top: 128px;
-    /*test убрать позже*/
 }
 
 section,

@@ -186,14 +186,17 @@
                         <div class="js-popup__content popup__content">
                             <p class="popup__title">Заказать услугу</p>
                             <p class="popup__feedback">Заполните форму, мы свяжемся с вами в течение суток</p>
+                            <form>
+                                <input class="input" type="name" name="user-name" placeholder="Имя" autocomplete="on">
 
-                            <input class="input" type="user-name" placeholder="Имя">
+                                <input class="input" type="email" name="email" placeholder="Электронная почта"
+                                    autocomplete="on">
 
-                            <input class="input" type="email" placeholder="Электронная почта">
+                                <input class="input" type="tel" name="tel" placeholder="Номер телефона"
+                                    autocomplete="on">
 
-                            <input class="input" type="phone" placeholder="Номер телефона">
-
-                            <button class="popup-btn-inner btn-wrapper">Отправить</button>
+                                <button class="popup-btn-inner btn-wrapper">Отправить</button>
+                            </form>
                             <div class="js-popup__close-btn popup__close-btn"></div>
                         </div>
                     </div>

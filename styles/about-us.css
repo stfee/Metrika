@@ -6,6 +6,7 @@
     font-size: 45px;
     line-height: 61px;
     color: #121212;
+    margin-bottom: 30px;
 }
 
 .button-show {
@@ -20,9 +21,21 @@
     background: #AD1818;
     border-radius: 5px;
     margin-bottom: 150px;
-    margin-top: 30px;
     cursor: pointer;
     border: none;
+    border: 1px solid #AD1818;
+}
+
+.button-show:hover {
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: #AD1818;
+    transition-duration: 0.75s;
+    border: 1px solid #AD1818;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
 }
 
 @media (max-width: 1199px) {

@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     gap: 55px;
+    margin-bottom: 86px;
 }
 
 .footer__nav__link {
@@ -35,7 +36,6 @@
     line-height: 27px;
     color: #FFFFFF;
     opacity: 0.5;
-    margin-top: 86px;
     margin-left: 6px;
 }
 
@@ -47,6 +47,7 @@
 
     .footer__nav-list {
         gap: 30px;
+        margin-bottom: 41px;
     }
 
     .footer__nav__link {
@@ -57,7 +58,6 @@
     .footer__studio-name {
         font-size: 13px;
         line-height: 18px;
-        margin-top: 41px;
         margin-left: 0px;
     }
 }

@@ -3,7 +3,8 @@
 }
 
 .review__item {
-    width: calc(50% - 25px);
+    flex: 1 0 calc(50% - 25px);
+    max-width: 860px;
 }
 
 .review__title {
@@ -36,7 +37,7 @@
     }
 
     .review__item {
-        width: calc(50% - 25px);
+        max-width: 694px;
     }
 
     .review__title {
@@ -59,7 +60,7 @@
     }
 
     .review__item-big {
-        width: 694px;
+        max-width: 694px;
     }
 }
 

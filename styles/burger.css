@@ -39,6 +39,7 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
+    margin-bottom: 90px;
 }
 
 .burger__nav-item {
@@ -61,7 +62,7 @@
     line-height: 22px;
     color: #000000;
     opacity: 0.5;
-    margin-top: 90px;
+
 }
 
 .burger__contacts-wrapper {
